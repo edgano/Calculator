@@ -51,7 +51,6 @@ public class MainActivity extends Activity {
     }
 
     private void reset() {
-        // TODO Auto-generated method stub
         str ="";
         op ="";
         num = 0;
@@ -59,7 +58,6 @@ public class MainActivity extends Activity {
         showResult.setText("");
     }
     private void insert(int j) {
-        // TODO Auto-generated method stub
         str = str+Integer.toString(j);
         num = Integer.valueOf(str).intValue();
         showResult.setText(showResult.getText()+" "+str);
@@ -70,7 +68,6 @@ public class MainActivity extends Activity {
         showResult.setText(showResult.getText()+" "+op);
     }
     private void calculate() {
-        // TODO Auto-generated method stub
         if(op == "+")
             num = numtemp+num;
         else if(op == "-")
