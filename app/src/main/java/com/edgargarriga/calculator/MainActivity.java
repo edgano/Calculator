@@ -9,7 +9,7 @@ public class MainActivity extends Activity {
 
     public String str ="";
     public String op = "";
-    int num,numtemp;
+    double num,numtemp;
     EditText showResult;
 
     @Override
