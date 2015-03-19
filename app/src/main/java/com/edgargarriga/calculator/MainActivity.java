@@ -58,9 +58,18 @@ public class MainActivity extends Activity {
         showResult.setText("");
     }
     private void insert(int j) {
-        str = str+Integer.toString(j);
+       /* str = str+Integer.toString(j);
         num = Integer.valueOf(str).intValue();
-        showResult.setText(showResult.getText()+" "+str);
+        showResult.setText(showResult.getText()+" "+num);*/
+        if (op==""){
+            str = str+Integer.toString(j);
+            num = Integer.valueOf(str).intValue();
+            showResult.setText(""+num);
+        }else{
+            str = str+Integer.toString(j);
+            num = Integer.valueOf(str).intValue();
+            showResult.setText(""+numtemp+" "+op+" "+num);
+        }
     }
     private void perform(String op) {
         str = "";
